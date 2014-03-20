@@ -36,6 +36,9 @@ group :production do
   gem 'pg'
 end
 
+# Not sure why thread_safe is failing on push to Heroku ... can we fix it? 
+gem "thread_safe", "0.2.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
