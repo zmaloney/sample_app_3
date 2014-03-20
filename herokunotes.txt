@@ -1,1 +1,34 @@
 http://serene-caverns-9027.herokuapp.com/
+
+#As of 3/19/2014, I'm getting the following : 
+orbital-2:sample_app_3 zachariemaloney$ git push heroku master
+Initializing repository, done.
+Counting objects: 66, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (54/54), done.
+Writing objects: 100% (66/66), 15.02 KiB | 0 bytes/s, done.
+Total 66 (delta 4), reused 0 (delta 0)
+
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       New app detected loading default bundler cache
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/.........
+       Fetching additional metadata from https://rubygems.org/..
+       Could not find thread_safe-0.3.0 in any of the sources
+       Bundler Output: Fetching gem metadata from https://rubygems.org/.........
+       Fetching additional metadata from https://rubygems.org/..
+       Could not find thread_safe-0.3.0 in any of the sources
+ !
+ !     Failed to install gems via Bundler.
+ !
+
+ !     Push rejected, failed to compile Ruby app
+
+To git@heroku.com:serene-caverns-9027.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:serene-caverns-9027.git'
+
+#This seems to be due to http://stackoverflow.com/questions/22510461/could-not-find-thread-safe-0-3-0-in-any-of-the-sources
