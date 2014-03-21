@@ -5,8 +5,9 @@ gem 'thread_safe', '0.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
+#Removed sqlite since Heroku.
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -34,9 +35,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :production do 
-  gem 'pg'
-end
+gem 'pg'
+
+# Not sure why thread_safe is failing on push to Heroku ... can we fix it? 
+gem "thread_safe", "0.2.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
