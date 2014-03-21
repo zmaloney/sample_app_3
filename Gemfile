@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'thread_safe', '0.2.0'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
@@ -34,8 +32,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-gem 'pg'
 
 # Not sure why thread_safe is failing on push to Heroku ... can we fix it? 
 gem "thread_safe", "0.2.0"
