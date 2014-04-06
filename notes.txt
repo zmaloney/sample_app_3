@@ -1,0 +1,5 @@
+We've used "rails generate scaffold User name:string email:string" to build a User model with the following form : 
+
+id : integer
+name : string
+email : string
